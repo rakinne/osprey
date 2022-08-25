@@ -34,6 +34,19 @@ to manage \relational databases\ and perform \various operations\ on the data in
         - ALTER DATABASE - modifies a database.
         - CREATE TABLE - creates a new table.
 
+Osprey is powered by SQLLite3. Low throttles of traffic is an early expectation, with capacity available were sudden increase in users were to take 
+place.
+
+"SQLite works great as the database engine for most low to medium traffic websites (which is to say, most websites). The amount of web traffic that 
+SQLite can handle depends on how heavily the website uses its database. Generally speaking, any site that gets fewer than 100K hits/day should work fine 
+with SQLite. The 100K hits/day figure is a conservative estimate, not a hard upper bound. SQLite has been demonstrated to work with 10 times that amount 
+of traffic" - (credit: https://www.sqlite.org/whentouse.html)
+
+Crucial to consider is a parsable, simple & proper "structure" for the data Osprey intends to house. Osprey is built using the Star Schema concept.
+
+## Osprey Schema
+Osprey is essentially a collection of N dimension tables orbiting a fact table.
+
 ## Design
 
 Web server with live chat
