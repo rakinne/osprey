@@ -34,7 +34,9 @@ to manage \relational databases\ and perform \various operations\ on the data in
         - ALTER DATABASE - modifies a database.
         - CREATE TABLE - creates a new table.
 
-## Design
+## General Design
 
-Web server with live chat
-    - present chat with keyboard input and potential for N users at once
+Web server
+    - presents a chatroom
+    - multiple participants on server at once
+    - can write messages
